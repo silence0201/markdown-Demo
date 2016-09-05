@@ -2,8 +2,8 @@ MarkDown语法测试
 ======================
 该文件用来测试基本的markdown语法.`markdown`是一种很常见的排版方式,`github`的`README`文件是在markdowm语句基础上进行扩展的`Github Flavored Markdown`.`markdown`应用十分广泛,一些博客以及wiki都是支持`markdown`进行编辑的  
 ***
-###　　　　　　　　　　　　Author : Silence  
-###　　　　　　　　　　　Data : 2016年09月05日        
+###　　　　　　　　　　　　  Author : Silence  
+###　　　　　　　　　　　  Data : 2016年09月05日        
      
 ======================  
   
