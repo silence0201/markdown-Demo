@@ -124,12 +124,12 @@ ___
 > 3. URL表示图片url的地址,如果会本地仓库内的地址,可以直接使用**相对路径**
 
 ###来自网络的图片
-`![2016090556137p101 3.jpg](http://7xwbzi.com1.z0.glb.clouddn.com/2016090556137p101 3.jpg)`
+`![2016090556137p101 3.jpg](http://7xwbzi.com1.z0.glb.clouddn.com/20160905561.jpg)`
 
-![2016090556137p101 3.jpg](http://7xwbzi.com1.z0.glb.clouddn.com/2016090556137p101 3.jpg)
+![2016090556137p101 3.jpg](http://7xwbzi.com1.z0.glb.clouddn.com/20160905561.jpg)
 
 ###来自本地的图片
-`![pp](./pp.jpg)`
+`![pp](./pp.jpg)`   
 ![pp](./pp.jpg)  
 如果引用github的地址注意格式为:`仓库地址/raw/分支名/图片路径`
 
@@ -175,7 +175,7 @@ ___
 给图片加链接本质是混合图片显示语法和普通的链接语法.  
 普通的链接中[ ]内部是链接要显示的文本,而图片链接[ ]里面则是要显示的图片   
 1. 内联式 
-[![2016090523637p102 2.jpg](http://7xwbzi.com1.z0.glb.clouddn.com/2016090523637p102 2.jpg)](http://www.playcode.cc 'text')
+[![2016090523637p102 2.jpg](http://7xwbzi.com1.z0.glb.clouddn.com/2016090523637p1.jpg)](http://www.playcode.cc 'text')
 2. 外链式  
 [![2016090528227p106.png](http://7xwbzi.com1.z0.glb.clouddn.com/2016090528227p106.png)][baidu]  
 
@@ -291,7 +291,7 @@ string &operator+(const string& A,const string& B) //cpp
 
 | 图片 | 描述 |
 |------|-------|
-|![2016090517430p102 3.jpg](http://7xwbzi.com1.z0.glb.clouddn.com/2016090517430p102 3.jpg) | [百度][baidu] |
+|![2016090517430p102 3.jpg](http://7xwbzi.com1.z0.glb.clouddn.com/2016090517430.jpg) | [百度][baidu] |
 
 ----------------------------
 [baidu]:https://www.baidu.com  '百度' 
