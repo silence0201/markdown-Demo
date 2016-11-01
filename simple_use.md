@@ -295,3 +295,6 @@ string &operator+(const string& A,const string& B) //cpp
 
 ----------------------------
 [baidu]:https://www.baidu.com  '百度' 
+
+
+
