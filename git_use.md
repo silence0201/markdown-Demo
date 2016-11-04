@@ -195,4 +195,12 @@
 
 	git checkout HEAD <file>
 	
+重置到指定提交
+
+	git revert <commit>
+	
+重置指定文件到指定提交
+
+	git checkout <commit> <file>
+	
 	
