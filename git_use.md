@@ -137,5 +137,62 @@
 	git push <remote> :<old name>
 	git push <remote> <new name>
 	
+给当前提交添加标志
 
+	git tag <tag-name>
+	
+6. Update & Publish
+---
+显示当前远程的配置
 
+	git remote -v
+	
+显示远程的信息
+
+	git remote show <remote>
+	
+创建一个远程仓库
+
+	git remote add <remote> <url>
+	
+重命名远程仓库
+
+	git remote rename <old-name> <new-name>
+	
+下载远程的改变,但不进行合并
+
+	git fetch <remote>
+	
+合并远程仓库
+
+	git pull <remote> <branch>
+	
+将本地更改推送到远程
+
+	git push <remote> <branch>
+	
+7. Merge & Rebase
+---
+合并分支
+
+	git merge <branch>
+	
+从上游分支获取最新commit信息，并有机的将当前分支和上游分支进行合并
+
+	git rebase <branch>
+
+完全取消变基
+
+	git rebase --abort
+	
+8. Undo
+---
+抛弃本地所有更改
+
+	git reset --hard HEAD
+	
+抛弃本地指定文件的更改
+
+	git checkout HEAD <file>
+	
+	
