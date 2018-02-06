@@ -1,0 +1,8 @@
+site_name: 简单接口文档测试
+
+pages:
+    - 首页: index.md
+    - 主页: home.md
+    - 我的: mine.md
+
+theme: readthedocs

@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>主页 - 简单接口文档测试</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "\u4e3b\u9875";
+    var mkdocs_page_input_path = "home.md";
+    var mkdocs_page_url = "/home/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> 简单接口文档测试</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">首页</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">主页</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#_1">首页接口</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#_2">首页导航栏搜索接口</a></li>
+        
+            <li><a class="toctree-l3" href="#_3">首页顶部标题接口</a></li>
+        
+            <li><a class="toctree-l3" href="#_4">首页新闻列表数据接口</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../mine/">我的</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">简单接口文档测试</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>主页</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="_1">首页接口</h1>
+<h2 id="_2">首页导航栏搜索接口</h2>
+<ul>
+<li>
+<p>请求方式：GET</p>
+</li>
+<li>
+<p>请求地址：/search/suggest/homepage_suggest/？</p>
+</li>
+<li>
+<p>请求参数</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th align="center">是否必须</th>
+<th>描述</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>device_id</td>
+<td>Int</td>
+<td align="center">N</td>
+<td>设备 ID</td>
+<td>8800803362</td>
+</tr>
+<tr>
+<td>iid</td>
+<td>Int</td>
+<td align="center">N</td>
+<td>未知</td>
+<td>14486549076</td>
+</tr>
+</tbody>
+</table>
+<p>返回数据</p>
+<pre><code>{
+    &quot;message&quot;: &quot;success&quot;,
+    &quot;data&quot;: {
+        &quot;call_per_refresh&quot;: 2,
+        &quot;homepage_search_suggest&quot;: &quot;左手右手手表 | 一个西瓜 | 人人都是产品经理&quot;
+    }
+}
+</code></pre>
+
+<h2 id="_3">首页顶部标题接口</h2>
+<ul>
+<li>
+<p>请求方式：GET</p>
+</li>
+<li>
+<p>请求地址：/article/category/get_subscribed/v1/?</p>
+</li>
+<li>
+<p>请求参数</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th align="center">是否必须</th>
+<th>描述</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>device_id</td>
+<td>Int</td>
+<td align="center">N</td>
+<td>设备 ID</td>
+<td>8800803362</td>
+</tr>
+<tr>
+<td>iid</td>
+<td>Int</td>
+<td align="center">N</td>
+<td>未知</td>
+<td>14486549076</td>
+</tr>
+</tbody>
+</table>
+<p>返回数据示例：</p>
+<pre><code>{
+    &quot;message&quot;: &quot;success&quot;,
+    &quot;data&quot;: {
+        &quot;version&quot;: &quot;0&quot;,
+        &quot;data&quot;: [
+            {
+                &quot;category&quot;: &quot;news_hot&quot;,
+                &quot;web_url&quot;: &quot;&quot;,
+                &quot;flags&quot;: 0,
+                &quot;name&quot;: &quot;热点&quot;,
+                &quot;tip_new&quot;: 0,
+                &quot;default_add&quot;: 1,
+                &quot;concern_id&quot;: &quot;&quot;,
+                &quot;type&quot;: 4,
+                &quot;icon_url&quot;: &quot;&quot;
+            },
+            {
+                &quot;category&quot;: &quot;video&quot;,
+                &quot;web_url&quot;: &quot;&quot;,
+                &quot;flags&quot;: 0,
+                &quot;name&quot;: &quot;视频&quot;,
+                &quot;tip_new&quot;: 0,
+                &quot;default_add&quot;: 1,
+                &quot;concern_id&quot;: &quot;&quot;,
+                &quot;type&quot;: 4,
+                &quot;icon_url&quot;: &quot;&quot;
+            }
+            // ...
+        ]
+    }
+}
+</code></pre>
+
+<h2 id="_4">首页新闻列表数据接口</h2>
+<ul>
+<li>
+<p>请求方式：GET</p>
+</li>
+<li>
+<p>请求地址 1：/api/news/feed/v58/?</p>
+</li>
+<li>请求地址 2：/api/news/feed/v64/?（也是视频列表接口）</li>
+<li>请求地址 2：/api/news/feed/v68/?</li>
+<li>
+<p>请求地址 2：/api/news/feed/v75/?</p>
+</li>
+<li>
+<p>请求参数</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>描述</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>device_id</td>
+<td>Int</td>
+<td>N</td>
+<td>设备 ID</td>
+<td>8800803362</td>
+</tr>
+<tr>
+<td>category</td>
+<td>String</td>
+<td>N</td>
+<td>新闻类别</td>
+<td>video</td>
+</tr>
+<tr>
+<td>tt_from</td>
+<td>String</td>
+<td>N</td>
+<td>下拉刷新或加载更多</td>
+<td>pull / load_more</td>
+</tr>
+<tr>
+<td>refresh_reason</td>
+<td>Int</td>
+<td>N</td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>strict</td>
+<td>Int</td>
+<td>N</td>
+<td></td>
+<td>0</td>
+</tr>
+<tr>
+<td>detail</td>
+<td>Int</td>
+<td>N</td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>min_behot_time</td>
+<td>Int</td>
+<td>下拉刷新的参数</td>
+<td></td>
+<td>1515848500</td>
+</tr>
+<tr>
+<td>max_behot_time</td>
+<td>Int</td>
+<td>加载更多的参数</td>
+<td></td>
+<td>1515848500</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>和视频列表数据接口相同， category 为 video</p>
+</blockquote>
+<p>返回数据有如下几种情况：</p>
+<h3 id="_5">推荐</h3>
+<h4 id="1">1.无图</h4>
+<p>返回的数据：</p>
+<pre><code>{
+    &quot;abstract&quot;:&quot;新华社厦门9月6日电 题：开启新的金砖合作发展之门——习近平主席出席金砖国家领导人厦门会晤系列活动纪实“我衷心希望厦门会晤为我们开启新的合作之门、发展之门，迎来金砖合作第二个‘金色十年’，开辟新兴市场国家和发展中国家光明未来。”——习近平厦庇五洲客，门纳万顷涛。&quot;,
+    &quot;action_list&quot;:[
+        {
+            &quot;action&quot;:1,
+            &quot;desc&quot;:&quot;&quot;,
+            &quot;extra&quot;:{
+
+            }
+        }
+    ],
+    &quot;aggr_type&quot;:1,
+    &quot;allow_download&quot;:false,
+    &quot;article_alt_url&quot;:&quot;http://toutiao.com/group/article/6462594562829140237/&quot;,
+    &quot;article_sub_type&quot;:0,
+    &quot;article_type&quot;:1,
+    &quot;article_url&quot;:&quot;http://news.xinhuanet.com/world/2017-09/06/c_1121617232.htm&quot;,
+    &quot;ban_comment&quot;:0,
+    &quot;behot_time&quot;:1504772050,
+    &quot;bury_count&quot;:0,
+    &quot;cell_flag&quot;:11,
+    &quot;cell_layout_style&quot;:1,
+    &quot;cell_type&quot;:0,
+    &quot;comment_count&quot;:96,
+    &quot;cursor&quot;:1504772050999,
+    &quot;digg_count&quot;:7,
+    &quot;display_url&quot;:&quot;http://toutiao.com/group/6462594562829140237/&quot;,
+    &quot;forward_info&quot;:{
+        &quot;forward_count&quot;:21
+    },
+    &quot;group_id&quot;:6462594562829140000,
+    &quot;has_m3u8_video&quot;:false,
+    &quot;has_mp4_video&quot;:0,
+    &quot;has_video&quot;:false,
+    &quot;hot&quot;:0,
+    &quot;ignore_web_transform&quot;:1,
+    &quot;is_stick&quot;:true,
+    &quot;is_subject&quot;:false,
+    &quot;item_id&quot;:6462602027422713000,
+    &quot;item_version&quot;:0,
+    &quot;keywords&quot;:&quot;金砖国家领导人,厦门,习近平主席,金砖国家,国际会议中心&quot;,
+    &quot;label&quot;:&quot;置顶&quot;,
+    &quot;label_style&quot;:1,
+    &quot;level&quot;:0,
+    &quot;like_count&quot;:7,
+    &quot;log_pb&quot;:{
+        &quot;impr_id&quot;:&quot;20170907161410010008017131695F0E&quot;
+    },
+    &quot;media_info&quot;:{
+        &quot;avatar_url&quot;:&quot;http://p2.pstatp.com/large/3658/7378365093&quot;,
+        &quot;follow&quot;:false,
+        &quot;is_star_user&quot;:false,
+        &quot;media_id&quot;:4377795668,
+        &quot;name&quot;:&quot;新华网&quot;,
+        &quot;recommend_reason&quot;:&quot;&quot;,
+        &quot;recommend_type&quot;:0,
+        &quot;user_id&quot;:4377795668,
+        &quot;user_verified&quot;:true,
+        &quot;verified_content&quot;:&quot;&quot;
+    },
+    &quot;media_name&quot;:&quot;新华网&quot;,
+    &quot;preload_web&quot;:1,
+    &quot;publish_time&quot;:1504690890,
+    &quot;read_count&quot;:934864,
+    &quot;repin_count&quot;:10094,
+    &quot;rid&quot;:&quot;20170907161410010008017131695F0E&quot;,
+    &quot;share_count&quot;:2600,
+    &quot;share_url&quot;:&quot;http://toutiao.com/group/6462594562829140237/?iid=14462706438&amp;app=news_article&quot;,
+    &quot;show_portrait&quot;:false,
+    &quot;show_portrait_article&quot;:false,
+    &quot;source&quot;:&quot;新华网&quot;,
+    &quot;source_icon_style&quot;:1,
+    &quot;source_open_url&quot;:&quot;sslocal://profile?uid=4377795668&quot;,
+    &quot;stick_label&quot;:&quot;置顶&quot;,
+    &quot;stick_style&quot;:1,
+    &quot;tag&quot;:&quot;news_politics&quot;,
+    &quot;tag_id&quot;:6462594562829140000,
+    &quot;tip&quot;:0,
+    &quot;title&quot;:&quot;习近平出席金砖国家领导人厦门会晤系列活动纪实&quot;,
+    &quot;ugc_recommend&quot;:{
+        &quot;activity&quot;:&quot;&quot;,
+        &quot;reason&quot;:&quot;新华网官方头条号&quot;
+    },
+    &quot;url&quot;:&quot;http://news.xinhuanet.com/world/2017-09/06/c_1121617232.htm&quot;,
+    &quot;user_info&quot;:{
+        &quot;avatar_url&quot;:&quot;http://p3.pstatp.com/thumb/3658/7378365093&quot;,
+        &quot;description&quot;:&quot;传播中国，报道世界；权威声音，亲切表达。&quot;,
+        &quot;follow&quot;:false,
+        &quot;follower_count&quot;:0,
+        &quot;name&quot;:&quot;新华网&quot;,
+        &quot;user_auth_info&quot;:{
+            &quot;auth_type&quot;:&quot;0&quot;,
+            &quot;auth_info&quot;:&quot;新华网官方头条号&quot;
+        },
+        &quot;user_id&quot;:4377795668,
+        &quot;user_verified&quot;:true,
+        &quot;verified_content&quot;:&quot;新华网官方头条号&quot;
+    },
+    &quot;user_repin&quot;:0,
+    &quot;user_verified&quot;:1,
+    &quot;verified_content&quot;:&quot;新华网官方头条号&quot;,
+    &quot;video_style&quot;:0
+}
+</code></pre>
+
+<h4 id="2">2.一大图</h4>
+<p>返回的数据：</p>
+<pre><code>{
+    &quot;abstract&quot;:&quot;&quot;,
+    &quot;action_extra&quot;:{
+        &quot;channel_id&quot;:5443492141
+    },
+    &quot;action_list&quot;:[
+        {
+            &quot;action&quot;:1,
+            &quot;desc&quot;:&quot;&quot;,
+            &quot;extra&quot;:{
+
+            }
+        },
+        {
+            &quot;action&quot;:3,
+            &quot;desc&quot;:&quot;&quot;,
+            &quot;extra&quot;:{
+
+            }
+        },
+        {
+            &quot;action&quot;:7,
+            &quot;desc&quot;:&quot;&quot;,
+            &quot;extra&quot;:{
+
+            }
+        },
+        {
+            &quot;action&quot;:9,
+            &quot;desc&quot;:&quot;&quot;,
+            &quot;extra&quot;:{
+
+            }
+        }
+    ],
+    &quot;aggr_type&quot;:1,
+    &quot;allow_download&quot;:false,
+    &quot;article_sub_type&quot;:0,
+    &quot;article_type&quot;:0,
+    &quot;article_url&quot;:&quot;http://toutiao.com/group/6448485086420697357/&quot;,
+    &quot;ban_comment&quot;:0,
+    &quot;behot_time&quot;:1503489767,
+    &quot;bury_count&quot;:0,
+    &quot;cell_flag&quot;:11,
+    &quot;cell_layout_style&quot;:1,
+    &quot;cell_type&quot;:0,
+    &quot;comment_count&quot;:4,
+    &quot;cursor&quot;:1503489767999,
+    &quot;digg_count&quot;:1,
+    &quot;display_url&quot;:&quot;http://toutiao.com/group/6448485086420697357/&quot;,
+    &quot;filter_words&quot;:[
+        {
+            &quot;id&quot;:&quot;8:0&quot;,
+            &quot;is_selected&quot;:false,
+            &quot;name&quot;:&quot;看过了&quot;
+        },
+        {
+            &quot;id&quot;:&quot;7:6&quot;,
+            &quot;is_selected&quot;:false,
+            &quot;name&quot;:&quot;标题党&quot;
+        },
+        {
+            &quot;id&quot;:&quot;5:1469309637&quot;,
+            &quot;is_selected&quot;:false,
+            &quot;name&quot;:&quot;拉黑作者:云端之战&quot;
+        },
+        {
+            &quot;id&quot;:&quot;2:11781250&quot;,
+            &quot;is_selected&quot;:false,
+            &quot;name&quot;:&quot;不想看:手机&quot;
+        },
+        {
+            &quot;id&quot;:&quot;6:18151&quot;,
+            &quot;is_selected&quot;:false,
+            &quot;name&quot;:&quot;不想看:iphone&quot;
+        }
+    ],
+    &quot;forward_info&quot;:{
+        &quot;forward_count&quot;:0
+    },
+    &quot;gallary_flag&quot;:1,
+    &quot;gallary_image_count&quot;:5,
+    &quot;group_flags&quot;:131072,
+    &quot;group_id&quot;:6448485086420697000,
+    &quot;has_image&quot;:true,
+    &quot;has_m3u8_video&quot;:false,
+    &quot;has_mp4_video&quot;:0,
+    &quot;has_video&quot;:false,
+    &quot;hot&quot;:0,
+    &quot;ignore_web_transform&quot;:0,
+    &quot;image_list&quot;:[
+        {
+            &quot;height&quot;:438,
+            &quot;uri&quot;:&quot;list/640x360/31d2000192851c1c56b2&quot;,
+            &quot;url&quot;:&quot;http://p3.pstatp.com/list/640x360/31d2000192851c1c56b2&quot;,
+            &quot;url_list&quot;:[
+                {
+                    &quot;url&quot;:&quot;http://p3.pstatp.com/list/640x360/31d2000192851c1c56b2&quot;
+                },
+                {
+                    &quot;url&quot;:&quot;http://pb9.pstatp.com/list/640x360/31d2000192851c1c56b2&quot;
+                },
+                {
+                    &quot;url&quot;:&quot;http://pb1.pstatp.com/list/640x360/31d2000192851c1c56b2&quot;
+                }
+            ],
+            &quot;width&quot;:788
+        },
+        {
+            &quot;height&quot;:435,
+            &quot;uri&quot;:&quot;list/31c80003bb3a767b44f6&quot;,
+            &quot;url&quot;:&quot;http://p3.pstatp.com/list/31c80003bb3a767b44f6&quot;,
+            &quot;url_list&quot;:[
+                {
+                    &quot;url&quot;:&quot;http://p3.pstatp.com/list/31c80003bb3a767b44f6&quot;
+                },
+                {
+                    &quot;url&quot;:&quot;http://pb9.pstatp.com/list/31c80003bb3a767b44f6&quot;
+                },
+                {
+                    &quot;url&quot;:&quot;http://pb1.pstatp.com/list/31c80003bb3a767b44f6&quot;
+                }
+            ],
+            &quot;width&quot;:790
+        },
+        {
+            &quot;height&quot;:436,
+            &quot;uri&quot;:&quot;list/31d400039527b0fcf128&quot;,
+            &quot;url&quot;:&quot;http://p9.pstatp.com/list/31d400039527b0fcf128&quot;,
+            &quot;url_list&quot;:[
+                {
+                    &quot;url&quot;:&quot;http://p9.pstatp.com/list/31d400039527b0fcf128&quot;
+                },
+                {
+                    &quot;url&quot;:&quot;http://pb1.pstatp.com/list/31d400039527b0fcf128&quot;
+                },
+                {
+                    &quot;url&quot;:&quot;http://pb3.pstatp.com/list/31d400039527b0fcf128&quot;
+                }
+            ],
+            &quot;width&quot;:781
+        }
+    ],
+    &quot;is_subject&quot;:false,
+    &quot;item_id&quot;:6448489556105758000,
+    &quot;item_version&quot;:0,
+    &quot;keywords&quot;:&quot;Siri,苹果8,OLED,iPhone 8,A11&quot;,
+    &quot;level&quot;:0,
+    &quot;like_count&quot;:1,
+    &quot;log_pb&quot;:{
+        &quot;impr_id&quot;:&quot;20170823200247010008035068933C4D&quot;
+    },
+    &quot;media_info&quot;:{
+        &quot;avatar_url&quot;:&quot;http://p9.pstatp.com/large/3645001308888dbb1e43&quot;,
+        &quot;follow&quot;:false,
+        &quot;is_star_user&quot;:false,
+        &quot;media_id&quot;:1573055191383053,
+        &quot;name&quot;:&quot;云端之战&quot;,
+        &quot;recommend_reason&quot;:&quot;&quot;,
+        &quot;recommend_type&quot;:0,
+        &quot;user_id&quot;:63661084805,
+        &quot;user_verified&quot;:false,
+        &quot;verified_content&quot;:&quot;&quot;
+    },
+    &quot;media_name&quot;:&quot;云端之战&quot;,
+    &quot;middle_image&quot;:{
+        &quot;height&quot;:438,
+        &quot;uri&quot;:&quot;list/31d2000192851c1c56b2&quot;,
+        &quot;url&quot;:&quot;http://p3.pstatp.com/list/300x196/31d2000192851c1c56b2.webp&quot;,
+        &quot;url_list&quot;:[
+            {
+                &quot;url&quot;:&quot;http://p3.pstatp.com/list/300x196/31d2000192851c1c56b2.webp&quot;
+            },
+            {
+                &quot;url&quot;:&quot;http://pb9.pstatp.com/list/300x196/31d2000192851c1c56b2.webp&quot;
+            },
+            {
+                &quot;url&quot;:&quot;http://pb1.pstatp.com/list/300x196/31d2000192851c1c56b2.webp&quot;
+            }
+        ],
+        &quot;width&quot;:788
+    },
+    &quot;preload_web&quot;:1,
+    &quot;publish_time&quot;:1501405974,
+    &quot;read_count&quot;:6704,
+    &quot;repin_count&quot;:13,
+    &quot;rid&quot;:&quot;20170823200247010008035068933C4D&quot;,
+    &quot;share_count&quot;:0,
+    &quot;share_url&quot;:&quot;http://toutiao.com/a6448485086420697357/?iid=13142832814&amp;app=news_article&quot;,
+    &quot;show_portrait&quot;:false,
+    &quot;show_portrait_article&quot;:false,
+    &quot;source&quot;:&quot;云端之战&quot;,
+    &quot;source_icon_style&quot;:4,
+    &quot;source_open_url&quot;:&quot;sslocal://profile?uid=63661084805&quot;,
+    &quot;tag&quot;:&quot;digital&quot;,
+    &quot;tag_id&quot;:6448485086420697000,
+    &quot;tip&quot;:0,
+    &quot;title&quot;:&quot;网络流传iPhone 8 真机图片，就长这样了，还会买吗？&quot;,
+    &quot;ugc_recommend&quot;:{
+        &quot;activity&quot;:&quot;&quot;,
+        &quot;reason&quot;:&quot;&quot;
+    },
+    &quot;url&quot;:&quot;http://toutiao.com/group/6448485086420697357/&quot;,
+    &quot;user_info&quot;:{
+        &quot;avatar_url&quot;:&quot;http://p3.pstatp.com/thumb/3645001308888dbb1e43&quot;,
+        &quot;description&quot;:&quot;分享科技、武器资讯。&quot;,
+        &quot;follow&quot;:false,
+        &quot;follower_count&quot;:0,
+        &quot;name&quot;:&quot;云端之战&quot;,
+        &quot;user_id&quot;:63661084805,
+        &quot;user_verified&quot;:false
+    },
+    &quot;user_repin&quot;:0,
+    &quot;user_verified&quot;:0,
+    &quot;verified_content&quot;:&quot;&quot;,
+    &quot;video_style&quot;:0
+}
+</code></pre>
+
+<h4 id="3-">3.一大图-视频</h4>
+<p>返回的数据：</p>
+<pre><code>{
+    &quot;log_pb&quot;:{
+        &quot;impr_id&quot;:&quot;201708211321030100030262039088E6&quot;
+    },
+    &quot;read_count&quot;:131615,
+    &quot;video_id&quot;:&quot;460cee0eb21340649f0736944fdfb463&quot;,
+    &quot;media_name&quot;:&quot;u7206笑风云&quot;,
+    &quot;ban_comment&quot;:0,
+    &quot;abstract&quot;:&quot;陈翔六点半：蘑菇头新提玛莎拉蒂2018款&quot;,
+    &quot;video_detail_info&quot;:{
+        &quot;group_flags&quot;:32832,
+        &quot;video_type&quot;:0,
+        &quot;video_preloading_flag&quot;:1,
+        &quot;video_url&quot;:[
+
+        ],
+        &quot;direct_play&quot;:1,
+        &quot;detail_video_large_image&quot;:{
+            &quot;url&quot;:&quot;http://p3.pstatp.com/video1609/35fe0015fb552c9f935f&quot;,
+            &quot;width&quot;:580,
+            &quot;url_list&quot;:[
+                {
+                    &quot;url&quot;:&quot;http://p3.pstatp.com/video1609/35fe0015fb552c9f935f&quot;
+                },
+                {
+                    &quot;url&quot;:&quot;http://pb9.pstatp.com/video1609/35fe0015fb552c9f935f&quot;
+                },
+                {
+                    &quot;url&quot;:&quot;http://pb1.pstatp.com/video1609/35fe0015fb552c9f935f&quot;
+                }
+            ],
+            &quot;uri&quot;:&quot;video1609/35fe0015fb552c9f935f&quot;,
+            &quot;height&quot;:326
+        },
+        &quot;show_pgc_subscribe&quot;:1,
+        &quot;video_third_monitor_url&quot;:&quot;&quot;,
+        &quot;video_id&quot;:&quot;460cee0eb21340649f0736944fdfb463&quot;,
+        &quot;video_watching_count&quot;:0,
+        &quot;video_watch_count&quot;:205861
+    },
+    &quot;image_list&quot;:[
+
+    ],
+    &quot;ugc_recommend&quot;:{
+        &quot;reason&quot;:&quot;&quot;,
+        &quot;activity&quot;:&quot;&quot;
+    },
+    &quot;article_type&quot;:0,
+    &quot;tag&quot;:&quot;video_car&quot;,
+    &quot;forward_info&quot;:{
+        &quot;forward_count&quot;:0
+    },
+    &quot;has_m3u8_video&quot;:0,
+    &quot;keywords&quot;:&quot;蘑菇头,陈翔,玛莎拉蒂&quot;,
+    &quot;video_duration&quot;:273,
+    &quot;show_portrait_article&quot;:false,
+    &quot;user_verified&quot;:0,
+    &quot;aggr_type&quot;:1,
+    &quot;cell_type&quot;:0,
+    &quot;article_sub_type&quot;:0,
+    &quot;group_flags&quot;:32833,
+    &quot;bury_count&quot;:47,
+    &quot;title&quot;:&quot;陈翔六点半：蘑菇头新提玛莎拉蒂2018款&quot;,
+    &quot;ignore_web_transform&quot;:1,
+    &quot;source_icon_style&quot;:1,
+    &quot;tip&quot;:0,
+    &quot;hot&quot;:0,
+    &quot;share_url&quot;:&quot;http://toutiao.com/a6454936131342434829/?iid=13142832814&amp;app=news_article&quot;,
+    &quot;has_mp4_video&quot;:0,
+    &quot;source&quot;:&quot;爆笑风云&quot;,
+    &quot;comment_count&quot;:22,
+    &quot;article_url&quot;:&quot;http://toutiao.com/group/6454936131342434829/&quot;,
+    &quot;filter_words&quot;:[
+        {
+            &quot;id&quot;:&quot;8:0&quot;,
+            &quot;name&quot;:&quot;看过了&quot;,
+            &quot;is_selected&quot;:false
+        },
+        {
+            &quot;id&quot;:&quot;9:1&quot;,
+            &quot;name&quot;:&quot;内容太水&quot;,
+            &quot;is_selected&quot;:false
+        },
+        {
+            &quot;id&quot;:&quot;5:623107913&quot;,
+            &quot;name&quot;:&quot;拉黑作者:爆笑风云&quot;,
+            &quot;is_selected&quot;:false
+        },
+        {
+            &quot;id&quot;:&quot;1:181604311&quot;,
+            &quot;name&quot;:&quot;不想看:汽车视频&quot;,
+            &quot;is_selected&quot;:false
+        },
+        {
+            &quot;id&quot;:&quot;6:139088&quot;,
+            &quot;name&quot;:&quot;不想看:陈翔&quot;,
+            &quot;is_selected&quot;:false
+        },
+        {
+            &quot;id&quot;:&quot;6:53463&quot;,
+            &quot;name&quot;:&quot;不想看:玛莎拉蒂&quot;,
+            &quot;is_selected&quot;:false
+        }
+    ],
+    &quot;share_count&quot;:180,
+    &quot;rid&quot;:&quot;201708211321030100030262039088E6&quot;,
+    &quot;video_play_info&quot;:{
+        &quot;status&quot;:10,
+        &quot;message&quot;:&quot;success&quot;,
+        &quot;video_duration&quot;:273.87,
+        &quot;validate&quot;:&quot;0&quot;,
+        &quot;enable_ssl&quot;:false,
+        &quot;poster_url&quot;:&quot;http://p3.pstatp.com/origin/360300031f4e9cce8d55&quot;,
+        &quot;original_play_url&quot;:{
+            &quot;backup_url&quot;:&quot;http://voffline.pstatp.com/audit/m/f19800002310d83b9f36/&quot;,
+            &quot;main_url&quot;:&quot;http://voffline.pstatp.com/audit/m/f19800002310d83b9f36/&quot;
+        },
+        &quot;video_list&quot;:{
+            &quot;video_1&quot;:{
+                &quot;definition&quot;:&quot;360p&quot;,
+                &quot;vtype&quot;:&quot;mp4&quot;,
+                &quot;vwidth&quot;:640,
+                &quot;vheight&quot;:360,
+                &quot;bitrate&quot;:426506,
+                &quot;logo_name&quot;:&quot;xigua&quot;,
+                &quot;coded_format&quot;:&quot;h264&quot;,
+                &quot;size&quot;:16922425,
+                &quot;main_url&quot;:&quot;aHR0cDovL3YxLXR0Lml4aWd1YS5jb20vMjlkNDM5MWQ5ZTMwODgyMTc0NDZlNmEwMWM4YmVlODYvNTk5YTZkYzAvdmlkZW8vbS8yMjA0ZmRlNDc3NGNlMGE0MjUwODY2YTQ4OTM1ZmYyYThhZDExNGYyZjQwMDAwNmU1ODRiMzgwNGRiLw==&quot;,
+                &quot;backup_url_1&quot;:&quot;aHR0cDovL3Y3LnBzdGF0cC5jb20vYmI1NzE2MzczNmM4ZDI5Mjg4ZjkzYTg4M2E5OGJlZWUvNTk5YTZkYzAvdmlkZW8vbS8yMjA0ZmRlNDc3NGNlMGE0MjUwODY2YTQ4OTM1ZmYyYThhZDExNGYyZjQwMDAwNmU1ODRiMzgwNGRiLw==&quot;,
+                &quot;user_video_proxy&quot;:1,
+                &quot;socket_buffer&quot;:255903600,
+                &quot;preload_size&quot;:327680,
+                &quot;preload_interval&quot;:25,
+                &quot;preload_min_step&quot;:5,
+                &quot;preload_max_step&quot;:10
+            }
+        },
+        &quot;dns_info&quot;:{
+
+        }
+    },
+    &quot;publish_time&quot;:1502906934,
+    &quot;action_list&quot;:[
+        {
+            &quot;action&quot;:1,
+            &quot;extra&quot;:{
+
+            },
+            &quot;desc&quot;:&quot;&quot;
+        },
+        {
+            &quot;action&quot;:3,
+            &quot;extra&quot;:{
+
+            },
+            &quot;desc&quot;:&quot;&quot;
+        },
+        {
+            &quot;action&quot;:7,
+            &quot;extra&quot;:{
+
+            },
+            &quot;desc&quot;:&quot;&quot;
+        },
+        {
+            &quot;action&quot;:9,
+            &quot;extra&quot;:{
+
+            },
+            &quot;desc&quot;:&quot;&quot;
+        }
+    ],
+    &quot;cell_layout_style&quot;:1,
+    &quot;tag_id&quot;:6454936131342435000,
+    &quot;video_style&quot;:2,
+    &quot;verified_content&quot;:&quot;&quot;,
+    &quot;display_url&quot;:&quot;http://toutiao.com/group/6454936131342434829/&quot;,
+    &quot;large_image_list&quot;:[
+        {
+            &quot;url&quot;:&quot;http://p3.pstatp.com/video1609/35fe0015fb552c9f935f&quot;,
+            &quot;width&quot;:580,
+            &quot;url_list&quot;:[
+                {
+                    &quot;url&quot;:&quot;http://p3.pstatp.com/video1609/35fe0015fb552c9f935f&quot;
+                },
+                {
+                    &quot;url&quot;:&quot;http://pb9.pstatp.com/video1609/35fe0015fb552c9f935f&quot;
+                },
+                {
+                    &quot;url&quot;:&quot;http://pb1.pstatp.com/video1609/35fe0015fb552c9f935f&quot;
+                }
+            ],
+            &quot;uri&quot;:&quot;video1609/35fe0015fb552c9f935f&quot;,
+            &quot;height&quot;:326
+        }
+    ],
+    &quot;media_info&quot;:{
+        &quot;user_id&quot;:54622538049,
+        &quot;verified_content&quot;:&quot;&quot;,
+        &quot;avatar_url&quot;:&quot;http://p3.pstatp.com/large/13540016473c776259a0&quot;,
+        &quot;media_id&quot;:1556951777514498,
+        &quot;name&quot;:&quot;爆笑风云&quot;,
+        &quot;recommend_type&quot;:0,
+        &quot;follow&quot;:false,
+        &quot;recommend_reason&quot;:&quot;&quot;,
+        &quot;is_star_user&quot;:false,
+        &quot;user_verified&quot;:false
+    },
+    &quot;item_id&quot;:6454936131342435000,
+    &quot;is_subject&quot;:false,
+    &quot;show_portrait&quot;:false,
+    &quot;repin_count&quot;:511,
+    &quot;cell_flag&quot;:75,
+    &quot;user_info&quot;:{
+        &quot;verified_content&quot;:&quot;&quot;,
+        &quot;avatar_url&quot;:&quot;http://p3.pstatp.com/thumb/13540016473c776259a0&quot;,
+        &quot;user_id&quot;:54622538049,
+        &quot;name&quot;:&quot;爆笑风云&quot;,
+        &quot;follower_count&quot;:0,
+        &quot;follow&quot;:false,
+        &quot;user_auth_info&quot;:&quot;&quot;,
+        &quot;user_verified&quot;:false,
+        &quot;description&quot;:&quot;我负责搞笑，你们负责笑&quot;
+    },
+    &quot;source_open_url&quot;:&quot;sslocal://profile?refer=video&amp;uid=54622538049&quot;,
+    &quot;level&quot;:0,
+    &quot;like_count&quot;:269,
+    &quot;digg_count&quot;:269,
+    &quot;behot_time&quot;:1503291345,
+    &quot;cursor&quot;:1503291345999,
+    &quot;url&quot;:&quot;http://toutiao.com/group/6454936131342434829/&quot;,
+    &quot;preload_web&quot;:0,
+    &quot;user_repin&quot;:0,
+    &quot;has_image&quot;:false,
+    &quot;item_version&quot;:0,
+    &quot;has_video&quot;:true,
+    &quot;group_id&quot;:6454936131342435000,
+    &quot;middle_image&quot;:{
+        &quot;url&quot;:&quot;http://p3.pstatp.com/list/300x196/35fe0015fb552c9f935f.webp&quot;,
+        &quot;width&quot;:640,
+        &quot;url_list&quot;:[
+            {
+                &quot;url&quot;:&quot;http://p3.pstatp.com/list/300x196/35fe0015fb552c9f935f.webp&quot;
+            },
+            {
+                &quot;url&quot;:&quot;http://pb9.pstatp.com/list/300x196/35fe0015fb552c9f935f.webp&quot;
+            },
+            {
+                &quot;url&quot;:&quot;http://pb1.pstatp.com/list/300x196/35fe0015fb552c9f935f.webp&quot;
+            }
+        ],
+        &quot;uri&quot;:&quot;list/35fe0015fb552c9f935f&quot;,
+        &quot;height&quot;:360
+    }
+}
+</code></pre>
+
+<h4 id="4">4.一小图</h4>
+<p>返回的数据：</p>
+<pre><code>{
+    &quot;log_pb&quot;:{
+        &quot;impr_id&quot;:&quot;20170823193708010008078081324061&quot;
+    },
+    &quot;read_count&quot;:17651,
+    &quot;media_name&quot;:&quot;军路&quot;,
+    &quot;ban_comment&quot;:0,
+    &quot;abstract&quot;:&quot;&quot;,
+    &quot;image_list&quot;:[
+
+    ],
+    &quot;ugc_recommend&quot;:{
+        &quot;reason&quot;:&quot;头条号原创作者&quot;,
+        &quot;activity&quot;:&quot;&quot;
+    },
+    &quot;article_type&quot;:0,
+    &quot;tag&quot;:&quot;emotion&quot;,
+    &quot;forward_info&quot;:{
+        &quot;forward_count&quot;:0
+    },
+    &quot;has_m3u8_video&quot;:0,
+    &quot;rid&quot;:&quot;20170823193708010008078081324061&quot;,
+    &quot;show_portrait_article&quot;:false,
+    &quot;user_verified&quot;:1,
+    &quot;aggr_type&quot;:1,
+    &quot;cell_type&quot;:0,
+    &quot;article_sub_type&quot;:0,
+    &quot;bury_count&quot;:0,
+    &quot;title&quot;:&quot;女朋友要这么撩，都学着点&quot;,
+    &quot;ignore_web_transform&quot;:1,
+    &quot;source_icon_style&quot;:5,
+    &quot;tip&quot;:0,
+    &quot;hot&quot;:0,
+    &quot;share_url&quot;:&quot;http://toutiao.com/a6457262317569573390/?iid=13142832814&amp;app=news_article&quot;,
+    &quot;has_mp4_video&quot;:0,
+    &quot;source&quot;:&quot;军路&quot;,
+    &quot;comment_count&quot;:10,
+    &quot;article_url&quot;:&quot;http://toutiao.com/group/6457262317569573390/&quot;,
+    &quot;filter_words&quot;:[
+        {
+            &quot;id&quot;:&quot;8:0&quot;,
+            &quot;name&quot;:&quot;看过了&quot;,
+            &quot;is_selected&quot;:false
+        },
+        {
+            &quot;id&quot;:&quot;9:1&quot;,
+            &quot;name&quot;:&quot;内容太水&quot;,
+            &quot;is_selected&quot;:false
+        },
+        {
+            &quot;id&quot;:&quot;5:61981476&quot;,
+            &quot;name&quot;:&quot;拉黑作者:军路&quot;,
+            &quot;is_selected&quot;:false
+        },
+        {
+            &quot;id&quot;:&quot;1:1650&quot;,
+            &quot;name&quot;:&quot;不想看:两性&quot;,
+            &quot;is_selected&quot;:false
+        }
+    ],
+    &quot;share_count&quot;:17,
+    &quot;publish_time&quot;:1503448542,
+    &quot;action_list&quot;:[
+        {
+            &quot;action&quot;:1,
+            &quot;extra&quot;:{
+
+            },
+            &quot;desc&quot;:&quot;&quot;
+        },
+        {
+            &quot;action&quot;:3,
+            &quot;extra&quot;:{
+
+            },
+            &quot;desc&quot;:&quot;&quot;
+        },
+        {
+            &quot;action&quot;:7,
+            &quot;extra&quot;:{
+
+            },
+            &quot;desc&quot;:&quot;&quot;
+        },
+        {
+            &quot;action&quot;:9,
+            &quot;extra&quot;:{
+
+            },
+            &quot;desc&quot;:&quot;&quot;
+        }
+    ],
+    &quot;gallary_image_count&quot;:4,
+    &quot;cell_layout_style&quot;:1,
+    &quot;tag_id&quot;:6457262317569574000,
+    &quot;video_style&quot;:0,
+    &quot;verified_content&quot;:&quot;头条号原创作者&quot;,
+    &quot;display_url&quot;:&quot;http://toutiao.com/group/6457262317569573390/&quot;,
+    &quot;large_image_list&quot;:[
+
+    ],
+    &quot;media_info&quot;:{
+        &quot;user_id&quot;:5503109311,
+        &quot;verified_content&quot;:&quot;&quot;,
+        &quot;avatar_url&quot;:&quot;http://p3.pstatp.com/large/4110003be258e2c49d6&quot;,
+        &quot;media_id&quot;:5502535968,
+        &quot;name&quot;:&quot;军路&quot;,
+        &quot;recommend_type&quot;:0,
+        &quot;follow&quot;:false,
+        &quot;recommend_reason&quot;:&quot;&quot;,
+        &quot;is_star_user&quot;:false,
+        &quot;user_verified&quot;:true
+    },
+    &quot;item_id&quot;:6457262317569574000,
+    &quot;is_subject&quot;:false,
+    &quot;show_portrait&quot;:false,
+    &quot;repin_count&quot;:239,
+    &quot;cell_flag&quot;:11,
+    &quot;user_info&quot;:{
+        &quot;verified_content&quot;:&quot;头条号原创作者&quot;,
+        &quot;avatar_url&quot;:&quot;http://p1.pstatp.com/thumb/4110003be258e2c49d6&quot;,
+        &quot;user_id&quot;:5503109311,
+        &quot;name&quot;:&quot;军路&quot;,
+        &quot;follower_count&quot;:0,
+        &quot;follow&quot;:false,
+        &quot;user_auth_info&quot;:{
+            &quot;auth_type&quot;:&quot;0&quot;,
+            &quot;other_auth&quot;:{
+                &quot;pgc&quot;:&quot;头条号原创作者&quot;
+            },
+            &quot;auth_info&quot;:&quot;头条号原创作者&quot;
+        },
+        &quot;user_verified&quot;:true,
+        &quot;description&quot;:&quot;凝聚万千军人军属，还原一个真实军营。&quot;
+    },
+    &quot;source_open_url&quot;:&quot;sslocal://profile?uid=5503109311&quot;,
+    &quot;level&quot;:0,
+    &quot;like_count&quot;:1,
+    &quot;digg_count&quot;:1,
+    &quot;behot_time&quot;:1503488225,
+    &quot;cursor&quot;:1503488225999,
+    &quot;url&quot;:&quot;http://toutiao.com/group/6457262317569573390/&quot;,
+    &quot;preload_web&quot;:1,
+    &quot;user_repin&quot;:0,
+    &quot;has_image&quot;:true,
+    &quot;item_version&quot;:0,
+    &quot;has_video&quot;:false,
+    &quot;group_id&quot;:6457262317569574000,
+    &quot;middle_image&quot;:{
+        &quot;url&quot;:&quot;http://p9.pstatp.com/list/300x196/3643000c735249235dc4.webp&quot;,
+        &quot;width&quot;:907,
+        &quot;url_list&quot;:[
+            {
+                &quot;url&quot;:&quot;http://p9.pstatp.com/list/300x196/3643000c735249235dc4.webp&quot;
+            },
+            {
+                &quot;url&quot;:&quot;http://pb1.pstatp.com/list/300x196/3643000c735249235dc4.webp&quot;
+            },
+            {
+                &quot;url&quot;:&quot;http://pb3.pstatp.com/list/300x196/3643000c735249235dc4.webp&quot;
+            }
+        ],
+        &quot;uri&quot;:&quot;list/3643000c735249235dc4&quot;,
+        &quot;height&quot;:510
+    }
+}
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../mine/" class="btn btn-neutral float-right" title="我的">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href=".." class="btn btn-neutral" title="首页"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../mine/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/require.js"></script>
+      <script src="../search/search.js"></script>
+
+</body>
+</html>
